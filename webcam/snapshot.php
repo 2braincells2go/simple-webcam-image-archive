@@ -95,7 +95,7 @@ Version: 1.0
           "VALUES ('$id', '".mysql_real_escape_string($category)."', '".mysql_real_escape_string($tags)."', '".mysql_real_escape_string($filename)."', '".mysql_real_escape_string($width)."', '".mysql_real_escape_string($height)."', '".mysql_real_escape_string($path)."', '".mysql_real_escape_string($thumb)."', '".mysql_real_escape_string($full)."', '".mysql_real_escape_string($extension)."', '".mysql_real_escape_string($length)."',NOW(), '".mysql_real_escape_string($checksum)."')";
           mysql_query($query) or die('Error, image details creation failed'); 
           
-          @unlink($path);
+          //@unlink($path);
           
 				}
 								
